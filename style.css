@@ -1,0 +1,289 @@
+/* =========================
+   GENERAL
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f8f9fa;
+    color:#333;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar-brand{
+    font-size:28px;
+    font-weight:bold;
+}
+
+.nav-link{
+    font-size:17px;
+    margin-left:10px;
+    transition:.3s;
+}
+
+.nav-link:hover{
+    color:#ffd54f !important;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero{
+    height:100vh;
+    background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url("images/hero.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+.hero h1{
+    font-size:65px;
+    text-shadow:2px 2px 10px black;
+}
+
+.hero p{
+    font-size:25px;
+    margin-top:20px;
+}
+
+.hero .btn{
+    padding:14px 35px;
+    font-size:20px;
+    border-radius:30px;
+}
+
+/* =========================
+   SECTION TITLE
+========================= */
+
+section h2{
+    color:#198754;
+    font-weight:bold;
+    margin-bottom:30px;
+}
+
+/* =========================
+   ABOUT
+========================= */
+
+#about img{
+    border-radius:15px;
+}
+
+#about p{
+    text-align:justify;
+    line-height:1.8;
+    font-size:18px;
+}
+
+/* =========================
+   CARDS
+========================= */
+
+.card{
+    border:none;
+    border-radius:15px;
+    overflow:hidden;
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 10px 30px rgba(0,0,0,.3);
+}
+
+.card img{
+    height:230px;
+    object-fit:cover;
+}
+
+.card-body h4{
+    color:#198754;
+    font-weight:bold;
+}
+
+.card-body p{
+    text-align:justify;
+}
+
+/* =========================
+   GALLERY
+========================= */
+
+.gallery-img{
+    height:220px;
+    width:100%;
+    object-fit:cover;
+    transition:.4s;
+    cursor:pointer;
+}
+
+.gallery-img:hover{
+    transform:scale(1.08);
+    box-shadow:0 10px 25px rgba(0,0,0,.4);
+}
+
+/* =========================
+   GOOGLE MAP
+========================= */
+
+iframe{
+    border-radius:15px;
+    box-shadow:0 8px 25px rgba(0,0,0,.2);
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+form{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 10px 20px rgba(0,0,0,.15);
+}
+
+.form-control{
+    border-radius:10px;
+    padding:12px;
+}
+
+textarea{
+    resize:none;
+}
+
+.btn-success{
+    font-size:18px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    margin-top:40px;
+}
+
+footer h5{
+    font-weight:bold;
+}
+
+footer i{
+    cursor:pointer;
+    transition:.3s;
+}
+
+footer i:hover{
+    color:#ffc107;
+    transform:scale(1.2);
+}
+
+/* =========================
+   BACK TO TOP BUTTON
+========================= */
+
+#topBtn{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    display:none;
+    width:50px;
+    height:50px;
+    font-size:22px;
+    z-index:999;
+}
+
+/* =========================
+   ANIMATION
+========================= */
+
+.card{
+    opacity:0;
+    transform:translateY(50px);
+    transition:all .8s ease;
+}
+
+.card.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:992px){
+
+.hero h1{
+    font-size:48px;
+}
+
+.hero p{
+    font-size:22px;
+}
+
+}
+
+@media(max-width:768px){
+
+.hero{
+    height:85vh;
+}
+
+.hero h1{
+    font-size:38px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+.navbar-brand{
+    font-size:22px;
+}
+
+.card img{
+    height:200px;
+}
+
+.gallery-img{
+    height:180px;
+}
+
+}
+
+@media(max-width:576px){
+
+.hero h1{
+    font-size:30px;
+}
+
+.hero p{
+    font-size:16px;
+}
+
+.hero .btn{
+    padding:10px 25px;
+    font-size:16px;
+}
+
+section{
+    padding-top:50px;
+    padding-bottom:50px;
+}
+
+}
